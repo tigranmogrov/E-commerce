@@ -1,7 +1,23 @@
 <template>
-  <div>
-    <NuxtWelcome />
+  <div class="wrapper">
+    <nuxt-layout>
+      <nuxt-page />
+    </nuxt-layout>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<style>
+:root,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  overflow: hidden;
+  max-width: 100%;
+  min-height: 100vh;
+}
+</style>
